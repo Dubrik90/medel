@@ -1,0 +1,1 @@
+.technical{background-color:var(--color-background);padding-top:30px;padding-bottom:50px}.technical__title{font-size:50px;margin-bottom:20px}.technical__block{display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[2];grid-template-columns:repeat(2,1fr);gap:10px}@media (max-width:1130.98px){.technical__block{-ms-grid-columns:(1fr)[1];grid-template-columns:repeat(1,1fr)}}
