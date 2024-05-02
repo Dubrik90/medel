@@ -1,0 +1,20 @@
+.technical {
+  background-color: var(--color-background);
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.technical__title {
+  margin-bottom: 20px;
+}
+
+.technical__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  @media (max-width: 1130.98px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image {}

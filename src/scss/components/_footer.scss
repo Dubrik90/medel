@@ -1,0 +1,65 @@
+.footer {
+  background-color: var(--color-background);
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  &_block {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 870.98px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+  }
+}
+
+.rooms {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 768.98px) {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.room-footer {
+  max-width: 350px;
+
+  @media (max-width: 870.98px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.block__rooms_adres {
+  flex: 1 1 auto;
+}
+
+.block__room_sity {
+  @media (max-width: 768.98px) {
+    &.city__footer {
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+
+    }
+  }
+}
+
+.block__rooms_link {
+  @media (max-width: 768.98px) {
+    &.link__footer {
+      align-self: center;
+    }
+  }
+}
+
+

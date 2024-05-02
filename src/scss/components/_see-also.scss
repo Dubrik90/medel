@@ -1,0 +1,124 @@
+.see-also {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--color-background);
+
+
+  // .services__title
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  // .services__text
+  &__text {
+    font-size: 18px;
+  }
+
+}
+
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @media (max-width: 700.98px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  // .service__card
+  &__card {
+  }
+}
+
+.card-service {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  // .card-service__body
+  &__body {
+    position: relative;
+    height: 100%;
+  }
+
+  // .card-service__image
+  &__image {
+    transition: opacity 0.3s ease 0s;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+      max-height: 400px;
+      opacity: 0.7;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__block {
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--light-color);
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  &__title {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: var(--light-color);
+  }
+
+  // .card-service__text-hover
+  &__text-hover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--light-color);
+
+    @media (max-width: 700.98px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 1;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      .card-service__text-hover {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .card-service__block {
+        bottom: 100px;
+      }
+    }
+  }
+}

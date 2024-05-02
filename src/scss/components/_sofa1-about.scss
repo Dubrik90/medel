@@ -1,0 +1,215 @@
+.sofa1-about {
+  background-color: var(--color-background);
+}
+
+.sofa1-about-bg {
+  height: 100svh;
+  background-color: var(--color-background);
+  background-image: url("../img/sofa/crown/01.webp");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  background-attachment: fixed;
+
+  &.milton-about {
+    background-image: url("../img/sofa/milton/01.webp");
+    background-position: 50% 80%;
+
+  }
+  &.frei-about {
+    background-position: 50% 90%;
+    background-image: url("../img/sofa/frei/01.webp");
+  }
+  &.dion-about {
+    background-position: 50% 60%;
+    background-image: url("../img/sofa/dion/01.webp");
+  }
+  &.teo-about {
+    background-position: 50% 90%;
+    background-image: url("../img/sofa/teo/01.webp");
+  }
+  &.liv-about {
+    background-position: 50% 90%;
+    background-image: url("../img/sofa/liv/01.webp");
+  }
+  &.leon-about {
+    background-position: 50% 70%;
+    background-image: url("../img/sofa/leon/01.webp");
+  }
+  &.eros-about {
+    background-position: 50% 70%;
+    background-image: url("../img/sofa/eros/01.webp");
+  }
+  &.auto-reverse {
+    background-position: 50% 100%;
+    background-image: url("../img/sofa/autoReverse/01.webp");
+  }
+  &.soft-about {
+    background-position: 50% 80%;
+    background-image: url("../img/sofa/soft/01.webp");
+  }
+  &.main-about {
+    background-position: 50% 85%;
+    background-image: url("../img/sofa/main/01.webp");
+  }
+  &.moon-about {
+    background-position: 50% 100%;
+    background-image: url("../img/sofa/moon/01.webp");
+  }
+  &.hilton-about {
+    background-position: 50% 90%;
+    background-image: url("../img/sofa/hilton/01.webp");
+  }
+  &.taos-about {
+    background-position: 50% 80%;
+    background-image: url("../img/sofa/taos/01.webp");
+  }
+  &.banoffy-about {
+    background-position: 50% 80%;
+    background-image: url("../img/sofa/banoffy/01.webp");
+  }
+  &.guinness-about {
+    background-position: 50% 50%;
+    background-image: url("../img/sofa/guinness/01.webp");
+  }
+  &.bora-about {
+    background-position: 50% 50%;
+    background-image: url("../img/bed/bora/01.webp");
+  }
+  &.iowa-about {
+    background-position: 50% 50%;
+    background-image: url("../img/bed/lowa/01.webp");
+  }
+  &.archibald-about {
+    background-position: 50% 60%;
+    background-image: url("../img/armchair/archibald/01.webp");
+  }
+  &.bruno-about {
+    background-position: 50% 60%;
+    background-image: url("../img/armchair/bruno/01.webp");
+  }
+  &.argo-about {
+    background-position: 50% 60%;
+    background-image: url("../img/bed/argo/01.webp");
+  }
+}
+
+.about__sofa1 {
+
+}
+
+.about__title {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.about__sofa1_btn-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.sofa__swiper {
+  padding-bottom: 40px;
+}
+
+.config__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-blue);
+  box-sizing: border-box;
+  border: 1px solid var(--color-blue);
+  line-height: 1.3;
+  color: var(--light-color);
+  padding: 13px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: box-shadow 0.3s, backgroundColor 0.3s;
+
+  &:focus {
+    //  outline: none;
+  }
+
+  @include hover {
+    transition: all 0.2s;
+    background-color: #808080;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+
+  &:active {
+    background-color: #808080;
+  }
+
+  &:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    cursor: not-allowed;
+  }
+}
+
+.swiper {
+  overflow: hidden;
+
+  & .image {
+
+  }
+}
+
+.swiper-wrapper {
+  max-width: 100%;
+  height: 450px;
+  box-sizing: content-box;
+  display: flex;
+  position: relative;
+}
+
+.swiper-vertical {
+  .swiper-wrapper {
+    flex-direction: column;
+  }
+}
+
+.swiper-autoheight {
+  .swiper-wrapper {
+    align-items: flex-start;
+  }
+}
+
+.swiper-initialized {
+  .swiper-slide {
+    flex-shrink: 0;
+    // transition-property: transform;
+  }
+}
+
+.swiper-android {
+
+  .swiper-slide,
+  .swiper-wrapper {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.swiper-button-lock {
+  display: none !important;
+}
+
+.swiper-pagination-current {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.6;
+  color: #BE52A6;
+}
+
+.swiper-pagination-total {
+  line-height: 2.2;
+}
+
+
+

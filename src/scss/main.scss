@@ -1,0 +1,21 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/popup";
+@import "./components/hero";
+@import "./components/hero-about";
+@import "./components/about";
+@import "./components/footer";
+@import "./components/hero-sofa";
+@import "./components/sofa1-about";
+@import "components/technical-data";
+@import "components/sofa-crown-advantages";
+@import "components/sofa-crown-size";
+@import "components/reviews";
+@import "components/see-also";

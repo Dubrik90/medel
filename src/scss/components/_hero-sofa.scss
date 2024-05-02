@@ -1,0 +1,11 @@
+.sofa {
+  background-color: var(--color-background);
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}

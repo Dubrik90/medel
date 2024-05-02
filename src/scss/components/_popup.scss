@@ -1,0 +1,75 @@
+.graph-modal::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+}
+
+.graph-modal__container {
+  width: 560px;
+  background-color: var(--color-background);
+  padding: 0 0 20px 0;
+
+  @media (max-width: 600.98px) {
+    width: 100%;
+  }
+
+  .graph-modal__close {
+    right: 20px;
+    top: 20px;
+    background-image: none;
+
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #f9fbfd;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: calc(50% - 1px);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+      bottom: calc(50% - 1px);
+    }
+
+    span {
+      top: calc(50% - 1px);
+    }
+  }
+  .btn-reset {
+
+  }
+}
+
+.graph-modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ // color: var(--color-black);
+  width: 100%;
+
+  img {
+    max-height: 300px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    align-self: flex-start;
+    padding: 15px;
+
+  }
+}
+
+.picture__block {
+  width: 100%;
+
+}
