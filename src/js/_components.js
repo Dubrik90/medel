@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   let form1 = document.querySelector('.main__form');
-  let status1 = document.querySelector('.form__text');
+  let status1 = document.querySelector('.main__form__text');
   let form2 = document.querySelector('.footer__form');
   let status2 = document.querySelector('.footer__form__text');
+
 
   function sendData(formData, status) {
     let xhr = new XMLHttpRequest();
@@ -12,9 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           status.textContent = "Мы с вами свяжемся в ближайшее время";
+          status.classList.remove('error')
           form.reset();
         } else {
           status.textContent = "Ошибка. Попробуйте еще раз";
+          status.classList.add('error')
         }
       }
     };

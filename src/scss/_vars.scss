@@ -82,3 +82,12 @@
     font-size: 16px;
   }
 }
+
+.main__form__text, .footer__form__text {
+  color: #2df306;
+  text-align: center;
+
+  &.error {
+    color: #e00000;
+  }
+}

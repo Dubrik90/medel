@@ -41,8 +41,8 @@ try {
   $mail->setFrom('dubrik9015@gmail.com', 'Заявка на мебель'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
- // $mail->addAddress('dubrik90@yandex.by');
-  $mail->addAddress('arte.studio1@mail.ru');
+  $mail->addAddress('dubrik90@yandex.by');
+ // $mail->addAddress('arte.studio1@mail.ru');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
