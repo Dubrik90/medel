@@ -8,7 +8,7 @@ const swiper = new Swiper('.sofa__swiper', {
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
-    depth: 100,
+    depth: 80,
     modifier: 1,
     slideShadows: true,
   },

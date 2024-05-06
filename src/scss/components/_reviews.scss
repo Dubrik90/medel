@@ -13,8 +13,8 @@
   display: flex;
   gap: 50px;
   overflow-x: auto;
- scroll-snap-type: x mandatory;
-//  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  //  scrollbar-width: none;
   padding: 15px 0;
 }
 
@@ -22,8 +22,8 @@
   display: flex;
 
   picture {
-  //  width: 230px;
-   // max-height: 420px;
+    //  width: 230px;
+    // max-height: 420px;
 
     img {
       object-fit: contain;
@@ -37,25 +37,15 @@
 }
 
 .slide-reviews {
- // text-align: center;
- // font-size: 18px;
- //// background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
- // max-width: 300px;
   height: 100%;
 }
 
 .image-reviews {
- // display: block;
-  //max-width: 200px;
- max-height: 420px;
+  max-height: 420px;
   object-fit: contain;
 
-  @media (max-width: 780.98px) {
-  //  max-height: 300px;
-   // object-fit: contain;
-  }
 
 }

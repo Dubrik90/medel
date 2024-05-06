@@ -4,13 +4,20 @@
 
 .sofa1-about-bg {
   height: 100svh;
+
   background-color: var(--color-background);
   background-image: url("../img/sofa/crown/01.webp");
-  background-position: 50% 50%;
+  background-position: 50% 70%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
   background-attachment: fixed;
+
+  @media (max-width: 715.98px) {
+    height: 400px;
+    background-attachment: unset;
+  }
+
 
   &.milton-about {
     background-image: url("../img/sofa/milton/01.webp");
@@ -22,7 +29,7 @@
     background-image: url("../img/sofa/frei/01.webp");
   }
   &.dion-about {
-    background-position: 50% 60%;
+    background-position: 100% 70%;
     background-image: url("../img/sofa/dion/01.webp");
   }
   &.teo-about {
@@ -70,7 +77,7 @@
     background-image: url("../img/sofa/banoffy/01.webp");
   }
   &.guinness-about {
-    background-position: 50% 50%;
+    background-position: 100% 70%;
     background-image: url("../img/sofa/guinness/01.webp");
   }
   &.bora-about {
@@ -78,7 +85,7 @@
     background-image: url("../img/bed/bora/01.webp");
   }
   &.iowa-about {
-    background-position: 50% 50%;
+    background-position: 20% 70%;
     background-image: url("../img/bed/lowa/01.webp");
   }
   &.archibald-about {
@@ -94,11 +101,11 @@
     background-image: url("../img/bed/argo/01.webp");
   }
   &.crown-about {
-    background-position: 50% 60%;
+    background-position: 20% 70%;
     background-image: url("../img/bed/crown/01.webp");
   }
   &.ester-about {
-    background-position: 50% 60%;
+    background-position: 50% 90%;
     background-image: url("../img/bed/ester/01.webp");
   }
   &.alys-about {
@@ -106,7 +113,7 @@
     background-image: url("../img/bed/alys/01.webp");
   }
   &.cosmo-about {
-    background-position: 50% 100%;
+    background-position: 10% 100%;
     background-image: url("../img/sofa/cosmo/01.webp");
   }
 }
@@ -120,6 +127,8 @@
   text-align: center;
   font-size: 50px;
   margin-bottom: 15px;
+  color: var(--color-black);
+  font-weight: 500;
 }
 
 .about__sofa1_btn-block {
@@ -183,6 +192,10 @@
   box-sizing: content-box;
   display: flex;
   position: relative;
+
+  @media (max-width: 500.98px) {
+    height: 270px;
+  }
 }
 
 .swiper-vertical {
@@ -200,7 +213,20 @@
 .swiper-initialized {
   .swiper-slide {
     flex-shrink: 0;
-    // transition-property: transform;
+
+    @media (max-width: 767.98px) {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    @media (max-width: 767.98px) {
+      background-image: none;
+    }
+
   }
 }
 
