@@ -24,94 +24,117 @@
     background-position: 50% 80%;
 
   }
+
   &.frei-about {
     background-position: 50% 90%;
     background-image: url("../img/sofa/frei/01.webp");
   }
+
   &.dion-about {
     background-position: 100% 70%;
     background-image: url("../img/sofa/dion/01.webp");
   }
+
   &.teo-about {
     background-position: 50% 90%;
     background-image: url("../img/sofa/teo/01.webp");
   }
+
   &.liv-about {
     background-position: 50% 90%;
     background-image: url("../img/sofa/liv/01.webp");
   }
+
   &.leon-about {
     background-position: 50% 70%;
     background-image: url("../img/sofa/leon/01.webp");
   }
+
   &.eros-about {
     background-position: 50% 70%;
     background-image: url("../img/sofa/eros/01.webp");
   }
+
   &.auto-reverse {
     background-position: 50% 100%;
     background-image: url("../img/sofa/autoReverse/01.webp");
   }
+
   &.soft-about {
     background-position: 50% 80%;
     background-image: url("../img/sofa/soft/01.webp");
   }
+
   &.main-about {
     background-position: 50% 85%;
     background-image: url("../img/sofa/main/01.webp");
   }
+
   &.moon-about {
     background-position: 50% 100%;
     background-image: url("../img/sofa/moon/01.webp");
   }
+
   &.hilton-about {
     background-position: 50% 90%;
     background-image: url("../img/sofa/hilton/01.webp");
   }
+
   &.taos-about {
     background-position: 50% 80%;
     background-image: url("../img/sofa/taos/01.webp");
   }
+
   &.banoffy-about {
     background-position: 50% 80%;
     background-image: url("../img/sofa/banoffy/01.webp");
   }
+
   &.guinness-about {
     background-position: 100% 70%;
     background-image: url("../img/sofa/guinness/01.webp");
   }
+
   &.bora-about {
     background-position: 50% 50%;
     background-image: url("../img/bed/bora/01.webp");
   }
+
   &.iowa-about {
     background-position: 20% 70%;
     background-image: url("../img/bed/lowa/01.webp");
   }
+
   &.archibald-about {
     background-position: 50% 60%;
     background-image: url("../img/armchair/archibald/01.webp");
   }
+
   &.bruno-about {
     background-position: 50% 60%;
     background-image: url("../img/armchair/bruno/01.webp");
   }
+
   &.argo-about {
     background-position: 50% 60%;
     background-image: url("../img/bed/argo/01.webp");
   }
+
   &.crown-about {
     background-position: 20% 70%;
     background-image: url("../img/bed/crown/01.webp");
   }
+
   &.ester-about {
     background-position: 50% 90%;
     background-image: url("../img/bed/ester/01.webp");
   }
+
   &.alys-about {
     background-position: 50% 60%;
     background-image: url("../img/bed/alys/01.webp");
   }
+
   &.cosmo-about {
     background-position: 10% 100%;
     background-image: url("../img/sofa/cosmo/01.webp");
@@ -127,8 +150,11 @@
   text-align: center;
   font-size: 50px;
   margin-bottom: 15px;
-  color: var(--color-black);
   font-weight: 500;
+
+  @media (max-width: 450.98px) {
+    font-size: 40px;
+  }
 }
 
 .about__sofa1_btn-block {
@@ -137,6 +163,7 @@
   justify-content: center;
 
 }
+
 .sofa__swiper {
   padding-bottom: 40px;
 }
@@ -194,7 +221,7 @@
   position: relative;
 
   @media (max-width: 500.98px) {
-    height: 270px;
+   // height: 350px;
   }
 }
 
@@ -214,10 +241,8 @@
   .swiper-slide {
     flex-shrink: 0;
 
-    @media (max-width: 767.98px) {
-      img {
-        object-fit: contain;
-      }
+    img {
+      object-position: 50% 70%;
     }
   }
 
