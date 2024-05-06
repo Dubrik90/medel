@@ -8,52 +8,52 @@ const modal = new GraphModal();
 
 document.addEventListener('DOMContentLoaded', function() {
 
-const videoElParent = document.querySelector(".video");
-const videoEl = videoElParent
-  ? videoElParent.querySelector(".video__item")
-  : null;
-const videoContainer = document.querySelector(".visibility-video");
-let played = false;
+// const videoElParent = document.querySelector(".video");
+// const videoEl = videoElParent
+//   ? videoElParent.querySelector(".video__item")
+//   : null;
+// const videoContainer = document.querySelector(".visibility-video");
+// let played = false;
 
-if (videoEl) {
-  videoElParent.addEventListener("click", function () {
-    if (videoEl.paused) {
-      videoEl.play();
-      videoElParent.classList.add("video-play");
-    } else {
-      videoEl.pause();
-      videoElParent.classList.remove("video-play");
-    }
-  });
-}
+// if (videoEl) {
+//   videoElParent.addEventListener("click", function () {
+//     if (videoEl.paused) {
+//       videoEl.play();
+//       videoElParent.classList.add("video-play");
+//     } else {
+//       videoEl.pause();
+//       videoElParent.classList.remove("video-play");
+//     }
+//   });
+// }
 
-function handleIntersection(entries, observer) {
-  entries.forEach(function (entry) {
-    if (entry.isIntersecting && !played) {
-      videoEl.play();
-      played = true;
-      videoElParent.classList.add("video-play");
-      observer.disconnect();
-    }
-  });
-}
+// function handleIntersection(entries, observer) {
+//   entries.forEach(function (entry) {
+//     if (entry.isIntersecting && !played) {
+//       videoEl.play();
+//       played = true;
+//       videoElParent.classList.add("video-play");
+//       observer.disconnect();
+//     }
+//   });
+// }
 
-if (videoContainer) {
-  const options = {
-    root: null,
-    threshold: 0.5,
-  };
+// if (videoContainer) {
+//   const options = {
+//     root: null,
+//     threshold: 0.5,
+//   };
 
-  const observer = new IntersectionObserver(handleIntersection, options);
+//   const observer = new IntersectionObserver(handleIntersection, options);
 
-  observer.observe(videoContainer);
-}
+//   observer.observe(videoContainer);
+// }
 
-if (videoEl) {
-  videoEl.addEventListener("ended", function () {
-    played = false;
-  });
-}
+// if (videoEl) {
+//   videoEl.addEventListener("ended", function () {
+//     played = false;
+//   });
+// }
 
 const currentPath = window.location.pathname
 const menuLinks = document.querySelectorAll('[data-active]');

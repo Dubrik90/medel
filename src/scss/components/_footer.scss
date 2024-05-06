@@ -6,6 +6,8 @@
   &_block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
     @media (max-width: 870.98px) {
       flex-direction: column;

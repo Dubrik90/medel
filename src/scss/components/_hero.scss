@@ -13,6 +13,7 @@
   grid-auto-rows: 500px;
   gap: 15px;
 
+
   @media (max-width: 768.98px) {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -25,12 +26,13 @@
   }
 }
 .card {
+
   display: flex;
   flex-direction: column;
   gap: 10px;
   cursor: pointer;
 
-  @include hover {
+   @include hover {
     .image {
       scale: 1.1;
     }
