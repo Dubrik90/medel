@@ -6,7 +6,7 @@ import GraphModal from "graph-modal";
 
 const modal = new GraphModal();
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
 // const videoElParent = document.querySelector(".video");
 // const videoEl = videoElParent
@@ -55,17 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
 //   });
 // }
 
-const currentPath = window.location.pathname
-const menuLinks = document.querySelectorAll('[data-active]');
+  const currentPath = window.location.pathname
+  const menuLinks = document.querySelectorAll('[data-active]');
 
-menuLinks.forEach(function(link) {
+  menuLinks.forEach(function (link) {
+    const keywords = ['index', 'sofa', 'ded', 'bed', 'armchair'];
 
-  const keywords = ['index', 'sofa', 'ded', 'armchair',];
+    if (keywords.some(keyword => link.getAttribute('data-active') === keyword && currentPath.includes(keyword))) {
+      link.classList.add('active');
+    }
 
-  if (keywords.some(keyword => link.getAttribute('data-active') === keyword && currentPath.includes(keyword))) {
-    link.classList.add('active');
-  }
-
-});
+  });
 
 });

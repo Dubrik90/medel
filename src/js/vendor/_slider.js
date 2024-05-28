@@ -45,7 +45,7 @@ const swiper = new Swiper('.sofa__swiper', {
         slideShadows: true,
       }
     },
-    1240: {
+    1140: {
       slidesPerView: 3,
       coverflowEffect: {
         rotate: 50,

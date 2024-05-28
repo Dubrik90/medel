@@ -117,6 +117,18 @@
     background-position: 10% 100%;
     background-image: url("../img/bed/prada/01.webp");
   }
+  &.bed-auto-reverse-about {
+    background-position: 50% 100%;
+    background-image: url("../img/bed/autoReverse/01.webp");
+  }
+  &.timber-about {
+    background-position: 50% 100%;
+    background-image: url("../img/bed/timber/01.webp");
+  }
+  &.alaska-about {
+    background-position: 50% 100%;
+    background-image: url("../img/bed/alaska/01.webp");
+  }
 }
 
 .about__sofa1 {
@@ -132,6 +144,10 @@
 
   @media (max-width: 450.98px) {
     font-size: 40px;
+  }
+
+  &.black {
+    color: var(--color-black);
   }
 }
 

@@ -25,6 +25,9 @@ const images = {
   "dedAlys": "./img/bed/alys/01.webp",
   "sofaCosmo": "./img/sofa/cosmo/01.webp",
   "sofaCrown": "./img/sofa/crown/01.webp",
+  "bedAutoReverse": "./img/bed/autoReverse/01.webp",
+  "dedTimber": "./img/bed/timber/01.webp",
+  "dedAlaska": "./img/bed/alaska/01.webp",
 };
 
 document.addEventListener('DOMContentLoaded', function () {
